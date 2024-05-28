@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+/* başlangç */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    
+    font-family: "Electrolize", sans-serif;
+    
+}
+/* bitiş */
+.navbar{
+    background-color: black;
+    height: 60px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+
+    
+}
+
+.navbar-wrapper{
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 50px;
+
+}
+.menü-list{
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+}
+.logo-wrapper h1{
+    color: rgb(255,70,70);
+    font-size: 30px;
+}
+.menü-list li{
+    cursor: pointer;
+}
+.menü-list li:hover{
+    font-weight: bold;
+}
+.menü-list li:first-child{
+     font-weight: bold;
+}
+   .profil-resim{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+   }
+   .profil{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+   }
+   .profil-text-cont{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    line height: 1px;
+   }
+   .toggle{
+    color: goldenrod;
+    width: 40px;
+    background: white;
+    height: 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+   }
+   .toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 01px;
+   }
+
+   /* sidebar */
+   .sidebar{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    row-gap: 40px;
+    position: fixed;
+    align-items: center;
+
+}
+.sidebar i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+/* sipderman kısım */
+.conteiner{
+    background-color: black;
+    color: white;
+}
+.content-wrapper{
+    margin-left: 50px;
+    
+}
+.featured-content{
+    background: url(./img/spiderman.jpg);
+    padding: 50px;
+    height: 91.8vh;
+    background-size: 100% 100%;
+}
+.featured-p{
+    width: 500px;
+    background-color: rgb(255,255,255,0.5);
+    padding: 10px;
+    margin: 30px 0;
+    color: black;
+
+}
+.featured-button{
+    display: flex;
+    column-gap: 20px;
+}
+.featured-button button{
+    padding: 10px 25px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    column-gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+
+
+}
+.featured-button button:nth-child(2){
+    background-color: rgba(145,142,142,0.5);
+    color: white;
+
+}
+/*     filter movie */
+.movie-list-filter{
+    margin: 20px 0 20px 50px;
+    padding: 20px;
+
+
+}
+.movie-list-filter select{
+    background-color: black;
+    color: white;
+    padding: 7px 0;
+    width: 125px;
+}
+/* movie list */
+.movie-list-conteiner{
+    margin-left: 70px;
+}
+.movie-list{
+    list-style: none;
+    padding: 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    transition: 1s all ease-in-out;
+}
+.movie-item{
+    position: relative;
+}
+.ikon-divi:hover,.movie-info-title:hover{
+    opacity: 1;
+    transition: 1s all ease;
+    cursor: pointer;
+
+}
+.movie-img{
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    transition: 1s all ease;
+    
+}
+.movie-img:hover{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+.movie-info-title{
+    background-color: rgb(40, 40, 40,0.4);
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0 10px;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+}
+.ikon-divi{
+    background-color: rgb(40, 40, 40,0.4);
+    
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    display: flex;
+    column-gap: 20px;
+    opacity: 0;
+    
+
+}
+.ikon-divi i{
+    cursor: pointer;
+    opacity: .5;
+    font-size: 20px;
+    transition: 0.5s all ease;
+}
+.ikon-divi i:hover{
+    opacity: 1;
+}
+.movie-list-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+.arrow{
+    width: 100px;
+    display: flex;
+    font-size: 120px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    opacity: .5;
+    cursor: pointer;
+    transition: .5s all ease;
+
+}
+.arrow:hover{
+    opacity: 1;
+}
+/* dark mode start */
+
+/* dark mode end */
