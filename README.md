@@ -15,5 +15,5 @@ responsive tasarım
 #EKRAN GÖRÜNTÜSÜ
 
 ![ezgif com-video-to-gif-converter](https://github.com/arzuarzugul/spiderman/assets/170249242/ed8214d8-5d1b-48f4-bd76-943e9314b4ee)
-![ezgif com-video-to-gif-converter](https://github.com/arzuarzugul/spiderman/assets/170249242/ed8214d8-5d1b-48f4-bd76-943e9314b4ee)
+
 
